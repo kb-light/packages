@@ -8,7 +8,7 @@ PKG_BUILD_DIR := $(BUILD_DIR)/$(PKG_NAME)
 
 include $(INCLUDE_DIR)/package.mk
 
-define Package/wifi-block-station
+define Package/wifi-mesh-macfilter
   SECTION:=net
   CATEGORY:=NETWORK
   TITLE:=WiFi - block/open 802.11s-mesh stations
