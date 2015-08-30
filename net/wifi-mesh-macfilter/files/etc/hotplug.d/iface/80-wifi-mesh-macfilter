@@ -17,7 +17,7 @@ config_get MODE $INTERFACE mode
 config_get POLICY $INTERFACE macfilter
 case $POLICY in
 	deny)	IW_POLICY="block";;
-	allow)	IW_POLICY="open"; iw dev $DEVICE set mesh_param mesh_auto_open_plink=0;;
+	allow)	IW_POLICY="open"; iw dev $DEVICE set mesh_param mesh_auto_open_plinks=0;;
 	*)		exit 0;;
 esac
 
